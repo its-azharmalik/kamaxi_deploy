@@ -10369,11 +10369,7 @@ img .amenities-icon{
   width: 10rem;
 }
 
-@media (min-width: 1000px){
-  .width-custom-amenities-title{
-    /* width: 8rem; */
-  }
-}
+
 
 @media (max-width: 800px){
   h5{
