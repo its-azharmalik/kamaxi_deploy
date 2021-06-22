@@ -3966,7 +3966,7 @@ object {
   margin-bottom: 0;
 }
 .icon-box--bg-color .icon-main img {
-  max-width: 60px;
+  /* max-width: 60px; */
 }
 .icon-box--bg-color.icon-box--icon-left .icon-main {
   float: left;
@@ -10348,4 +10348,48 @@ img .amenities-icon{
   width: 2rem;
   height: 2rem;
 
+}
+
+.icon-container-custom{
+  display: flex;
+  /* width: 50rem; */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ameneties-padding{
+  margin: 0.5rem;
+}
+
+.icon-size-custom{
+  margin-bottom: 0.8rem;
+}
+
+.width-custom-amenities-title{
+  width: 10rem;
+}
+
+@media (min-width: 1000px){
+  .width-custom-amenities-title{
+    /* width: 8rem; */
+  }
+}
+
+@media (max-width: 800px){
+  h5{
+    font-size: 10px;
+  }
+  img .amenities-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .icon-size-custom{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .width-custom-amenities-title{
+    width: 5rem;
+  }
 }
