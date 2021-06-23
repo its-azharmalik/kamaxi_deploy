@@ -452,7 +452,7 @@
         nav:true,
         dots: false,
         loop:true,
-        navText: ['<i class="ot-flaticon-left-arrow"></i>', '<i class="ot-flaticon-right-arrow"></i>'],
+        // navText: ['<i class="ot-flaticon-left-arrow"></i>', '<i class="ot-flaticon-right-arrow"></i>'],
         responsive:{
             1000:{
                 items:1
@@ -487,17 +487,17 @@
      $(".clients-slide").owlCarousel({
         nav:false,
         dots: false,
-        loop:true,
+        loop:false,
         margin: 140,
         item: 'center',
         navText: ['<i class="ot-flaticon-left-arrow"></i>', '<i class="ot-flaticon-right-arrow"></i>'],
         responsive:{
             1600:{
-                items:6
+                items:4
             },
             1200:{
                 margin: 60,
-                items:6
+                items:4
             },
             767:{
                 margin: 60,

@@ -7554,6 +7554,7 @@ section {
 .clients-slide .owl-stage, .clients-slide-medium .owl-stage {
     display: flex;
     align-items: center;
+
 }
 .clients-slide .img-item figure, .clients-slide-medium .img-item figure {
     margin-top: 0;
@@ -10392,4 +10393,14 @@ img .amenities-icon{
 
 input.footer-input{
   background: none !important;
+  border: none;
+}
+
+input.footer-input:active{
+  border: none;
+}
+
+.client-1{
+  align-items: center !important;
+  justify-content: center !important;
 }
