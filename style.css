@@ -10389,3 +10389,7 @@ img .amenities-icon{
     width: 5rem;
   }
 }
+
+input.footer-input{
+  background: none !important;
+}
