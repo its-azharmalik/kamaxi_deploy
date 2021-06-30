@@ -680,7 +680,7 @@
                                     <div class="contact-left mr-xl-70">
                                         <h2>Make An Enquiry</h2>
                                         <p class="font14">Your Phone Number will not be published. Required fields are marked *</p>
-                                        <form action="contact.php" method="post" class="wpcf7">
+                                        <form  method="POST" class="wpcf7"  onsubmit=downloadButton()>
                                             <div class="main-form">
                                                 <p>
                                                     <input type="text" name="name" value="" size="40" class="" aria-invalid="false" placeholder="Your Name *" required>
@@ -691,7 +691,9 @@
                                                 <p>
                                                     <textarea name="message" cols="40" rows="10" class="" aria-invalid="false" placeholder="Message..." required></textarea>
                                                 </p>
-                                                <p><button type="submit" class="octf-btn">Download Brochure</button></p>
+                                                <p>
+                                                 
+                                                    <button type="submit" class="octf-btn">Download Brochure</button></p>
                                             </div>
                                         </form>
                                     </div>
@@ -948,6 +950,8 @@
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/royal_preloader.min.js"></script>
+    <script src="js/form.js"></script>
+
     <script>
         window.jQuery = window.$ = jQuery;  
         (function($) { "use strict";
