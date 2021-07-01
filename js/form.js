@@ -1,8 +1,9 @@
 document.querySelector('.wpcf7').onsubmit = (e) =>{
     e.preventDefault();
     var urls = [
-    '/ayan.pdf',
-    '/azhar.pdf'
+    '/kamaxiHeights.pdf',
+    '/kamaxiGreen.pdf',
+    '/kamaxiKunj.pdf'
     ]
 
     var interval = setInterval(download, 300, urls);
