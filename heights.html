@@ -904,10 +904,10 @@
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div class="widget-footer footer-widget-subcribe">
                             <h6>Download Brochure</h6>
-                            <form class="mc4wp-form" method="post">
+                            <form class="mc4wp-form" method="POST" onsubmit=downloadButton() >
                                 <div class="mc4wp-form-fields">
                                     <div class="subscribe-inner-form">
-                                        <input type="text" name="Phone" placeholder="YOUR PHONE" required="" class="footer-input">
+                                        <input type="text" name="Phone" placeholder="YOUR PHONE" required class="footer-input">
                                         <button type="submit" class="subscribe-btn-icon"><i class="ot-flaticon-send"></i></button>
                                     </div>
                                 </div>
@@ -951,6 +951,7 @@
     <script src="js/scripts.js"></script>
     <script src="js/royal_preloader.min.js"></script>
     <script src="js/form.js"></script>
+
 
     <script>
         window.jQuery = window.$ = jQuery;  
