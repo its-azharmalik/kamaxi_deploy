@@ -7242,6 +7242,9 @@ section {
 .page-header-about {
   background-image: url('Images/about.png');
 }
+.page-header-soon {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
 .pheader-service-detail1 {
   background-image: url('https://via.placeholder.com/1920x500.png');
 }
@@ -10403,4 +10406,8 @@ input.footer-input:active{
 .client-1{
   align-items: center !important;
   justify-content: center !important;
+}
+
+.custom_comingsoon-container > img{
+  width: 100% !important;
 }

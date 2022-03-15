@@ -40,26 +40,27 @@ document.querySelector(".allPdfs").onsubmit = (e) => {
   }
 };
 
-document.querySelector(".heightPdfs").onsubmit = (e) => {
-  e.preventDefault();
-  var urls = ["/kamaxiKunj.pdf"];
+// document.querySelector(".heightPdfs").onsubmit = (e) => {
+//   e.preventDefault();
+//   var urls = ["/kamaxiHeights.pdf"];
 
-  var interval = setInterval(download, 300, urls);
+//   var interval = setInterval(download, 300, urls);
 
-  function download(urls) {
-    var url = urls.pop();
+//   function download(urls) {
+//     var url = urls.pop();
+//     console.log(url);
 
-    var a = document.createElement("a");
-    a.setAttribute("href", url);
-    a.setAttribute("download", "");
-    a.setAttribute("target", "_blank");
-    a.click();
+//     var a = document.createElement("a");
+//     a.setAttribute("href", url);
+//     a.setAttribute("download", "");
+//     a.setAttribute("target", "_blank");
+//     a.click();
 
-    if (urls.length == 0) {
-      clearInterval(interval);
-    }
-  }
-};
+//     if (urls.length == 0) {
+//       clearInterval(interval);
+//     }
+//   }
+// };
 
 document.querySelector(".greenPdfs").onsubmit = (e) => {
   e.preventDefault();
@@ -82,23 +83,17 @@ document.querySelector(".greenPdfs").onsubmit = (e) => {
   }
 };
 
-document.querySelector(".kunjPdfs").onsubmit = (e) => {
+function download(url) {
+  var a = document.createElement("a");
+  a.setAttribute("href", url);
+  a.setAttribute("download", "");
+  a.setAttribute("target", "_blank");
+  a.click();
+}
+
+document.querySelector(".heightPdfs").onsubmit = (e) => {
   e.preventDefault();
-  var urls = ["/kamaxiGreen.pdf"];
 
-  var interval = setInterval(download, 300, urls);
-
-  function download(urls) {
-    var url = urls.pop();
-
-    var a = document.createElement("a");
-    a.setAttribute("href", url);
-    a.setAttribute("download", "");
-    a.setAttribute("target", "_blank");
-    a.click();
-
-    if (urls.length == 0) {
-      clearInterval(interval);
-    }
-  }
+  var url = "/kamaxiKunj.pdf";
+  download(url);
 };
